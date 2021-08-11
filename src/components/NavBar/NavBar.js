@@ -49,15 +49,15 @@ export default function Navbar({ fixed }) {
 									Projects
 								</NavLink>
 							</li>
-							{/* <li className='nav-item'>
+							<li className='nav-item'>
 								<NavLink
 									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									href='#pablo'
-									to='/post'
+									to='/skills'
 								>
-									Blog Posts
+									Skills
 								</NavLink>
-							</li> */}
+							</li>
 							<li className='nav-item'>
 								<NavLink
 									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
