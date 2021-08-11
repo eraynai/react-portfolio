@@ -25,13 +25,13 @@ export default function Home() {
 						<div className='flex justify-center'>
 							<Link
 								to='/about'
-								className='inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg'
+								className='inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg'
 							>
 								Work With Me
 							</Link>
 							<Link
 								to='/project'
-								className='ml-4 inline-flex text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-white rounded text-lg'
+								className='ml-4 inline-flex text-white bg-regal-blue border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-white rounded text-lg'
 							>
 								See My Projects
 							</Link>
