@@ -4,7 +4,11 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			name: 'title',
+			name: 'projectTitle',
+			type: 'string',
+		},
+		{
+			name: 'codeRepo',
 			type: 'string',
 		},
 		{
@@ -40,7 +44,11 @@ export default {
 			},
 		},
 		{
-			name: 'link',
+			name: 'websiteLink',
+			type: 'url',
+		},
+		{
+			name: 'githubLink',
 			type: 'url',
 		},
 		{
