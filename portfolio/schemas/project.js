@@ -37,9 +37,9 @@ export default {
 			type: 'string',
 			options: {
 				list: [
-					{ value: 'personal', title: 'Personal' },
-					{ value: 'client', title: 'Client' },
-					{ value: 'school', title: 'School' },
+					{ value: 'Personal Project', title: 'Personal Project' },
+					{ value: 'Client Project', title: 'Client Project' },
+					{ value: 'School Project', title: 'School Project' },
 				],
 			},
 		},
@@ -62,6 +62,13 @@ export default {
 			options: {
 				layout: 'tags',
 			},
+		},
+	],
+	orderings: [
+		{
+			name: 'dateDesc',
+			type: 'datetime',
+			by: [{ field: 'date', direction: 'desc' }],
 		},
 	],
 };

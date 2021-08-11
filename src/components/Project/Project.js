@@ -11,12 +11,13 @@ export default function Project() {
 				`*[_type == 'project']{
 			projectTitle,
 			codeRepo,
-			data,
+			dateDesc,
 			place,
 			description,
 			websiteLink,
 			githubLink,
-			tags, 
+			tags,
+			projectType, 
 			mainImage{
 				asset->{
 					_id,
@@ -47,11 +48,55 @@ export default function Project() {
 								suscipit quod porro ad.
 							</p>
 						</div>
-						<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6'>
+					</div>
+					<div className='bg-gray-100 min-h-screen py-5 px-10'>
+						<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 lg:px-10'>
 							{projectData &&
 								projectData.map((project, index) => (
 									<div className='container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300'>
-										{/* <a
+										<img
+											src={project.mainImage.asset.url}
+											alt={project.mainImage.alt}
+											className='rounded-t-lg w-full'
+										/>
+										<div className='p-6'>
+											<a
+												href={project.websiteLink}
+												alt={project.projectTitle}
+												key={index}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												<h1 className='md:text-1xl text-xl text-center hover:underline hover:text-yellow-500 transition duration-200 font-bold text-gray-900'>
+													{project.projectTitle}
+												</h1>
+											</a>
+											<a
+												href={project.githubLink}
+												alt={project.codeRepo}
+												key={index}
+												target='_blank'
+												rel='noopener noreferrer'
+											>
+												<h2 className='md:text-1xl text-md text-center hover:text-yellow-500 transition duration-200 font-bold text-gray-900'>
+													{project.codeRepo}
+												</h2>
+											</a>
+											<p className='text-gray-700 my-2 hover-text-900'>
+												{project.description}
+											</p>
+											<h2 className='text-gray-900'>
+												<strong>Finished On:</strong>{' '}
+												{new Date(project.dateDesc).toLocaleDateString()}
+											</h2>
+											<h2 className='text-gray-900'>
+												<strong>Type:</strong> {project.projectType}
+											</h2>
+											<h2 className='text-gray-900'>
+												<strong>Technologies Used:</strong>
+												{project.tags}
+											</h2>
+											{/* <a
 											className='sm:w-1/2 w-100 p-4'
 											href={project.websiteLink}
 											alt={project.projectTitle}
@@ -59,20 +104,21 @@ export default function Project() {
 											target='_blank'
 											rel='noopener noreferrer'
 										> */}
-										{/* <div className='flex relative'>
+											{/* <div className='flex relative'>
 											<img
 												src={project.mainImage.asset.url}
 												alt={project.mainImage.alt}
 												className='absolute inset-0 w-full h-full object-cover object center'
 											/> */}
-										{/* <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100'>
+											{/* <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100'>
 												<h1 className='title-font text-lg font-medium text-white'>
 													{project.projectTitle}
 												</h1>
 												<p className='leading-relaxed'>{project.description}</p>
 											</div> */}
-										{/* </div> */}
-										{/* </a> */}
+											{/* </div> */}
+											{/* </a> */}
+										</div>
 									</div>
 								))}
 						</div>
