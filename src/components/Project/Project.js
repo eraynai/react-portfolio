@@ -8,15 +8,16 @@ export default function Project() {
 	useEffect(() => {
 		sanityClient
 			.fetch(
-				`*[_type == 'project']{
+				`*[_type == 'project'] | order(order asc){
 			projectTitle,
 			codeRepo,
-			dateDesc,
+			date,
 			place,
 			description,
 			websiteLink,
 			githubLink,
 			tags,
+			technologies,
 			projectType, 
 			mainImage{
 				asset->{
@@ -34,7 +35,7 @@ export default function Project() {
 	return (
 		<React.Fragment>
 			<main>
-				<section id='projects' className='text-gray-400 bg-gray-900'>
+				<section id='projects' className='text-gray-400 bg-gray-100'>
 					<div className='container px-5 py-10 mx-auto text-center lg:px-40'>
 						<div className='flex flex-col w-full w-10 mb-4'>
 							<CodeIcon className='mx-auto inline-block w-10 mb-4' />
@@ -67,7 +68,7 @@ export default function Project() {
 												target='_blank'
 												rel='noopener noreferrer'
 											>
-												<h1 className='md:text-1xl text-xl text-center hover:underline hover:text-yellow-500 transition duration-200 font-bold text-gray-900'>
+												<h1 className='md:text-1xl text-xl text-center hover:text-yellow-500 transition duration-200 font-bold text-gray-900'>
 													{project.projectTitle}
 												</h1>
 											</a>
@@ -87,15 +88,19 @@ export default function Project() {
 											</p>
 											<h2 className='text-gray-900'>
 												<strong>Finished On:</strong>{' '}
-												{new Date(project.dateDesc).toLocaleDateString()}
+												{new Date(project.date).toLocaleDateString()}
 											</h2>
 											<h2 className='text-gray-900'>
 												<strong>Type:</strong> {project.projectType}
 											</h2>
 											<h2 className='text-gray-900'>
 												<strong>Technologies Used:</strong>
-												{project.tags}
 											</h2>
+											<ul className='list-disc px-6 py-3 text-gray-900'>
+												{project.tags.map((tag) => (
+													<li>{tag}</li>
+												))}
+											</ul>
 											{/* <a
 											className='sm:w-1/2 w-100 p-4'
 											href={project.websiteLink}

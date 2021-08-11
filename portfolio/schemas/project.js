@@ -12,6 +12,12 @@ export default {
 			type: 'string',
 		},
 		{
+			name: 'order',
+			title: 'Order',
+			type: 'number',
+			hidden: true,
+		},
+		{
 			name: 'date',
 			type: 'datetime',
 		},
@@ -37,9 +43,30 @@ export default {
 			type: 'string',
 			options: {
 				list: [
-					{ value: 'Personal Project', title: 'Personal Project' },
-					{ value: 'Client Project', title: 'Client Project' },
-					{ value: 'School Project', title: 'School Project' },
+					{
+						value: 'School Project - Solo Developer',
+						title: 'School Project - Solo Developer',
+					},
+					{
+						value: 'School Project - Team Project',
+						title: 'School Project - Team Project',
+					},
+					{
+						value: 'Client Project - Team Project',
+						title: 'Client Project - Team Project',
+					},
+					{
+						value: 'Client Project - Solo Developer',
+						title: 'Client Project - Solo Developer',
+					},
+					{
+						value: 'Personal Project - Solo Developer',
+						title: 'Personal Project - Solo Developer',
+					},
+					{
+						value: 'Personal Project - Team Project',
+						title: 'Personal Project - Team Project',
+					},
 				],
 			},
 		},
@@ -62,13 +89,6 @@ export default {
 			options: {
 				layout: 'tags',
 			},
-		},
-	],
-	orderings: [
-		{
-			name: 'dateDesc',
-			type: 'datetime',
-			by: [{ field: 'date', direction: 'desc' }],
 		},
 	],
 };
