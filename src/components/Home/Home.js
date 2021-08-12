@@ -8,12 +8,12 @@ export default function Home() {
 			<section id='about'>
 				<div className='container mx-auto flex px-10 py-20 md:flex-row flex-col items-center mt-20'>
 					<div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
-						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-black'>
+						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
 							Hi, I'm Elli.
 							<br className='hidden lg:inline-block' /> I love to build amazing
 							apps.
 						</h1>
-						<p className='mb-8 leading-relaxed'>
+						<p className='mb-8 leading-relaxed text-base text-gray-400'>
 							I am a highly motivated, collaborative, and communicative Toronto
 							based fullstack developer with a passion for making apps that have
 							an impact on people's lives. I am a graduate of General Assembly's
@@ -31,7 +31,7 @@ export default function Home() {
 							</Link>
 							<Link
 								to='/project'
-								className='ml-4 inline-flex text-white bg-regal-blue border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-white rounded text-lg'
+								className='ml-4 inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 hover:text-white rounded text-lg'
 							>
 								See My Projects
 							</Link>

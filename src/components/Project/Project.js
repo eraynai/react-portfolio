@@ -50,11 +50,11 @@ export default function Project() {
 							</p>
 						</div>
 					</div>
-					<div className='bg-gray-100 min-h-screen py-5 px-10'>
-						<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 lg:px-10'>
+					<div className=' min-h-screen py-5 px-10'>
+						<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 lg:px-10'>
 							{projectData &&
 								projectData.map((project, index) => (
-									<div className='container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300'>
+									<div className='bg-gray-100 container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300'>
 										<img
 											src={project.mainImage.asset.url}
 											alt={project.mainImage.alt}
