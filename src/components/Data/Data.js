@@ -2,7 +2,7 @@ export const skills = [
 	'HTML',
 	'CSS',
 	'JavaScript',
-	'Node.js',
+	'NodeJS',
 	'Express',
 	'Mongo',
 	'Mongoose',

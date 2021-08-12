@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
-		<>
+		<React.Fragment>
 			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-yellow-500'>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
@@ -44,6 +44,14 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<NavLink
 									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									to='/'
+								>
+									About Me
+								</NavLink>
+							</li>
+							<li className='nav-item'>
+								<NavLink
+									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									to='/project'
 								>
 									Projects
@@ -55,14 +63,6 @@ export default function Navbar({ fixed }) {
 									to='/skills'
 								>
 									Skills
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-									to='/'
-								>
-									About Me
 								</NavLink>
 							</li>
 							<li className='nav-item'>
@@ -95,6 +95,6 @@ export default function Navbar({ fixed }) {
 					</div>
 				</div>
 			</nav>
-		</>
+		</React.Fragment>
 	);
 }
