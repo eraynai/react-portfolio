@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../images/elli_logo_v2.svg';
 import { SocialIcon } from 'react-social-icons';
+import ResumeIcon from '../../images/cv-04.svg';
 
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = useState(false);
@@ -90,6 +91,14 @@ export default function Navbar({ fixed }) {
 									fgColor='#fff'
 									style={{ height: 35, width: 35 }}
 								></SocialIcon>
+							</li>
+							<li className='nav-item pt-3 md:pt-2 lg:pt-0'>
+								<img
+									className='px-3 lg:ml-4 md:ml-0 flex items-center text-xs leading-snug hover:opacity-75'
+									src={ResumeIcon}
+									alt='cv icon'
+									style={{ width: 50 }}
+								/>
 							</li>
 						</ul>
 					</div>
