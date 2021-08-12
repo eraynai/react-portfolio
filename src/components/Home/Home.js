@@ -14,9 +14,9 @@ export default function Home() {
 							apps.
 						</h1>
 						<p className='mb-8 leading-relaxed text-base text-gray-400'>
-							I am a highly motivated, collaborative, and communicative, Toronto
-							- based, fullstack developer with a passion for making apps that
-							have an impact on people's lives. I am a graduate of General
+							I am a highly motivated, collaborative, and communicative,
+							Toronto-based, fullstack developer with a passion for making apps
+							that have an impact on people's lives. I am a graduate of General
 							Assembly's Software Engineering Immersive bootcamp and have a
 							diploma in user experience design from George Brown College. On a
 							personal note, I am passionate about future technologies such as
