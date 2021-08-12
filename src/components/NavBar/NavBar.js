@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../images/elli_logo_v2.svg';
 import { SocialIcon } from 'react-social-icons';
-import ResumeIcon from '../../images/cv-04.svg';
+import { FcViewDetails } from 'react-icons/fc';
+import CV from '../../images/cv.pdf';
 
 export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = useState(false);
@@ -93,12 +94,12 @@ export default function Navbar({ fixed }) {
 								></SocialIcon>
 							</li>
 							<li className='nav-item pt-3 md:pt-2 lg:pt-0'>
-								<img
-									className='px-3 lg:ml-4 md:ml-0 flex items-center text-xs leading-snug hover:opacity-75'
-									src={ResumeIcon}
-									alt='cv icon'
-									style={{ width: 50 }}
-								/>
+								<a href={CV} target='_blank' rel='noopener noreferrer'>
+									<FcViewDetails
+										style={{ height: 36, width: 36 }}
+										className='lg:ml-4 md:ml-0 flex items-center text-xs leading-snug hover:opacity-75'
+									></FcViewDetails>
+								</a>
 							</li>
 						</ul>
 					</div>
