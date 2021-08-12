@@ -52,7 +52,6 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<NavLink
 									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-									href='#pablo'
 									to='/skills'
 								>
 									Skills
@@ -61,10 +60,17 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<NavLink
 									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
-									href='#pablo'
-									to='/about'
+									to='/'
 								>
 									About Me
+								</NavLink>
+							</li>
+							<li className='nav-item'>
+								<NavLink
+									className='lg:px-12 md:px-2 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									to='/contact'
+								>
+									Contact Me
 								</NavLink>
 							</li>
 							<li className='nav-item md:pt-2 lg:pt-0'>
