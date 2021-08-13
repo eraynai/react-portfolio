@@ -44,28 +44,12 @@ export default {
 			options: {
 				list: [
 					{
-						value: 'School Project - Solo Developer',
-						title: 'School Project - Solo Developer',
+						value: 'Solo Developer',
+						title: 'Solo Developer',
 					},
 					{
-						value: 'School Project - Team Project',
-						title: 'School Project - Team Project',
-					},
-					{
-						value: 'Client Project - Team Project',
-						title: 'Client Project - Team Project',
-					},
-					{
-						value: 'Client Project - Solo Developer',
-						title: 'Client Project - Solo Developer',
-					},
-					{
-						value: 'Personal Project - Solo Developer',
-						title: 'Personal Project - Solo Developer',
-					},
-					{
-						value: 'Personal Project - Team Project',
-						title: 'Personal Project - Team Project',
+						value: 'Team Project',
+						title: 'Team Project',
 					},
 				],
 			},
