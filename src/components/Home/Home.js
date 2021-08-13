@@ -21,7 +21,18 @@ export default function Home() {
 							have an advanced diploma in User Experience Design and Development
 							from George Brown College. On a personal note, I am passionate
 							about future technologies such as VR/AR and have made several
-							projects in these emerging fields.
+							projects in these emerging fields. Some of these projects have
+							been documented{' '}
+							<a
+								className='hover:text-white'
+								href='https://cinehackers.com/portfolio'
+								alt='cinehackers website'
+								target='_blank'
+								rel='noreferrer'
+							>
+								here
+							</a>
+							.
 						</p>
 						<div className='flex justify-center'>
 							<Link

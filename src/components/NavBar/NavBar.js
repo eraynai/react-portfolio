@@ -44,7 +44,7 @@ export default function Navbar({ fixed }) {
 							className='mr-2'
 						/>
 						<NavLink to='/' className='font-bold text-xl uppercase text-white'>
-							Fullstack Developer
+							Full Stack Developer
 						</NavLink>
 					</div>
 					<div className='lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 mt-2'>
