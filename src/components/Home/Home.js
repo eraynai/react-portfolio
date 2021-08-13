@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<React.Fragment>
 			<section id='about'>
-				<div className='container mx-auto flex px-10 py-20 md:flex-row flex-col items-center mt-20'>
+				<div className='container mx-auto flex px-10 py-10 md:flex-row flex-col items-center mt-20'>
 					<div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
 						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
 							Hi, I'm Elli.
@@ -16,11 +16,12 @@ export default function Home() {
 						<p className='mb-8 leading-relaxed text-base text-gray-400'>
 							I am a highly motivated, collaborative, and communicative,
 							Toronto-based, fullstack developer with a passion for making apps
-							that have an impact on people's lives. I am a graduate of General
-							Assembly's Software Engineering Immersive bootcamp and have a
-							diploma in user experience design from George Brown College. On a
-							personal note, I am passionate about future technologies such as
-							VR/AR and have made several projects in these emerging fields.
+							that have an impact on people's lives. I am a recent graduate of
+							General Assembly's Software Engineering Immersive Bootcamp and
+							have an advanced diploma in User Experience Design and Development
+							from George Brown College. On a personal note, I am passionate
+							about future technologies such as VR/AR and have made several
+							projects in these emerging fields.
 						</p>
 						<div className='flex justify-center'>
 							<Link
