@@ -43,10 +43,8 @@ export default function Project() {
 								Apps I've Built
 							</h1>
 							<p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-								tempore libero iusto, voluptatibus neque ipsa tempora blanditiis
-								nam at illo expedita voluptatem sapiente et error! Voluptatum
-								suscipit quod porro ad.
+								These are a selection of some of the most exciting projects that
+								I worked on over the past year.
 							</p>
 						</div>
 					</div>
