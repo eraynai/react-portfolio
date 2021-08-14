@@ -62,10 +62,10 @@ export default function Navbar({ fixed }) {
 							fgColor='#fff'
 							style={{ height: 35, width: 35 }}
 						></SocialIcon>
-						<a href={CV} target='_blank' rel='noopener noreferrer'>
+						<a href={CV} target='_blank' rel='noreferrer'>
 							<FcViewDetails
 								style={{ height: 36, width: 36 }}
-								className='ml-4 hover:opacity-75'
+								className=' ml-4 hover:opacity-75 pointer'
 							></FcViewDetails>
 						</a>
 					</div>
