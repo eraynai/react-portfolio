@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import Logo from '../../images/elli_logo_v2.svg';
 import { SocialIcon } from 'react-social-icons';
 import { FcViewDetails } from 'react-icons/fc';
@@ -8,33 +8,32 @@ import CV from '../../images/cv2.pdf';
 export default function Navbar({ fixed }) {
 	return (
 		<React.Fragment>
-			<header className='text-white bg-yellow-500 body-font w-full'>
-				<div class='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+			<header className='text-white bg-yellow-500 body-font w-full sticky top-0'>
+				<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
 					<nav className='flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto mt-2'>
-						<NavLink
-							className='mr-5 cursor-pointer border-b border-transparent hover:opacity-75 text-white font-bold'
-							to='/'
-						>
+						<button className='mr-5 cursor-pointer border-b border-transparent hover:opacity-75 text-white font-bold'>
 							Home
-						</NavLink>
-						<NavLink
-							className='mr-5 cursor-pointer border-b border-transparent hover:opacity-75 text-white font-bold'
+						</button>
+						<button
+							className='mr-5 cursor-pointer border-b border-transparent
+							hover:opacity-75 text-white font-bold'
 							to='/project'
 						>
+							{' '}
 							Projects
-						</NavLink>
-						<NavLink
+						</button>
+						<button
 							className='mr-5 cursor-pointer border-b border-transparent hover:opacity-75 text-white font-bold'
 							to='/skills'
 						>
 							Skills
-						</NavLink>
-						<NavLink
+						</button>
+						<button
 							className='mr-5 cursor-pointer border-b border-transparent hover:opacity-75 text-white font-bold'
 							to='/contact'
 						>
 							Contact
-						</NavLink>
+						</button>
 					</nav>
 					<div className=' flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center lg:items-center lg:justify-center mb-4 md:mb-0'>
 						<img
@@ -43,9 +42,6 @@ export default function Navbar({ fixed }) {
 							alt='Workflow'
 							className='mr-2'
 						/>
-						<NavLink to='/' className='font-bold text-xl uppercase text-white'>
-							Full Stack Developer
-						</NavLink>
 					</div>
 					<div className='lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 mt-2'>
 						<SocialIcon

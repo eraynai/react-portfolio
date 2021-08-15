@@ -43,13 +43,15 @@ export default function Project() {
 								Apps I've Built
 							</h1>
 							<p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
-								These are a selection of some of the most exciting projects that
-								I worked on over the past year.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+								tempore libero iusto, voluptatibus neque ipsa tempora blanditiis
+								nam at illo expedita voluptatem sapiente et error! Voluptatum
+								suscipit quod porro ad.
 							</p>
 						</div>
 					</div>
-					<div className=' min-h-screen py-5 px-10'>
-						<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 lg:px-10'>
+					<div className=' min-h-screen py-5 px-1'>
+						<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols- md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-2 lg:px-5'>
 							{projectData &&
 								projectData.map((project, index) => (
 									<div className='bg-gray-100 container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300'>
