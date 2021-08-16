@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../../client';
 import { CodeIcon } from '@heroicons/react/solid';
+import Card from '../Card/Card';
+import { Container, Grid } from './index';
 
 export default function Project() {
 	const [projectData, setProjectData] = useState(null);
@@ -130,6 +132,11 @@ export default function Project() {
 					</div>
 				</section>
 			</main>
+			<Container>
+				<Grid>
+					<Card />
+				</Grid>
+			</Container>
 		</React.Fragment>
 	);
 }
