@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../images/elli_logo_v2.svg';
 import { SocialIcon } from 'react-social-icons';
 import { FcViewDetails } from 'react-icons/fc';
-import CV from '../../images/cv2.pdf';
+import CV from '../../images/cv3.pdf';
 
 export default function Navbar({ fixed }) {
 	return (
@@ -43,9 +43,9 @@ export default function Navbar({ fixed }) {
 							alt='Workflow'
 							className='mr-2'
 						/>
-						<NavLink to='/' className='font-bold text-xl uppercase text-white'>
+						{/* <NavLink to='/' className='font-bold text-xl uppercase text-white'>
 							Full Stack Developer
-						</NavLink>
+						</NavLink> */}
 					</div>
 					<div className='lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 mt-2'>
 						<SocialIcon
