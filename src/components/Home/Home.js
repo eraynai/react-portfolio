@@ -1,6 +1,6 @@
-import React from 'react';
-import HeroImg from '../../images/elli_pic.svg';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import HeroImg from '../../images/elli_pic.svg'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -22,18 +22,7 @@ export default function Home() {
                 Bootcamp and have an advanced diploma in User Experience Design
                 and Development from George Brown College. On a personal note, I
                 am passionate about future technologies such as VR/AR and have
-                made several projects in these emerging fields. Some of these
-                projects have been documented{' '}
-                <a
-                  className='hover:text-white backSpace'
-                  href='https://cinehackers.com/portfolio'
-                  alt='cinehackers website'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  here
-                </a>
-                .
+                made several projects in these emerging fields.
               </p>
             </div>
             <div className='flex justify-center button-animation backSpace'>
@@ -62,5 +51,5 @@ export default function Home() {
         </div>
       </section>
     </React.Fragment>
-  );
+  )
 }
