@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../images/elli_logo_v2.svg';
 import { SocialIcon } from 'react-social-icons';
 import { FcViewDetails } from 'react-icons/fc';
-import CV from '../../images/cv4.pdf';
+import CV from '../../images/cv_april_2022.pdf';
 
 export default function Navbar({ fixed }) {
   return (
