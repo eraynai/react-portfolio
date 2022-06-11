@@ -99,28 +99,6 @@ export default function Project() {
 													<li>{tag}</li>
 												))}
 											</ul>
-											{/* <a
-											className='sm:w-1/2 w-100 p-4'
-											href={project.websiteLink}
-											alt={project.projectTitle}
-											key={index}
-											target='_blank'
-											rel='noopener noreferrer'
-										> */}
-											{/* <div className='flex relative'>
-											<img
-												src={project.mainImage.asset.url}
-												alt={project.mainImage.alt}
-												className='absolute inset-0 w-full h-full object-cover object center'
-											/> */}
-											{/* <div className='px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100'>
-												<h1 className='title-font text-lg font-medium text-white'>
-													{project.projectTitle}
-												</h1>
-												<p className='leading-relaxed'>{project.description}</p>
-											</div> */}
-											{/* </div> */}
-											{/* </a> */}
 										</div>
 									</div>
 								))}

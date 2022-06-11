@@ -37,7 +37,7 @@ export default function Contact() {
 						Hire Me
 					</h2>
 					<p className='leading-relaxed mb-5 text-gray-400'>
-						I'm excited to meet you and learn about any potential you are
+						I'm excited to meet you and learn about any potential roles you are
 						looking to fill on your development team.
 					</p>
 					<div className='relative mb-4'>
