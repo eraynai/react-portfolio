@@ -16,8 +16,8 @@ export default function Home() {
               </h1>
               <p className='mb-8 leading-relaxed text-base text-gray-400 backSpace'>
                 I am a highly motivated, collaborative, and communicative,
-                Toronto-based, full stack developer with a passion for making
-                apps that have an impact on people's lives. I am a recent
+                Toronto-based, front end developer with a passion for making
+                apps, user interfaces, and working in a team to make the best possible product. I am a recent
                 graduate of General Assembly's Software Engineering Immersive
                 Bootcamp and have an advanced diploma in User Experience Design
                 and Development from George Brown College. On a personal note, I
