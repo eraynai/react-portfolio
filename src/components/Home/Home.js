@@ -12,7 +12,7 @@ export default function Home() {
               <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white backSpace'>
                 Hi, I'm Elli.
                 <br className='hidden lg:inline-block backSpace' /> I love to
-                build amazing apps.
+                build amazing web experiences.
               </h1>
               <p className='mb-8 leading-relaxed text-base text-gray-400 backSpace'>
                 I am a highly motivated, collaborative, and communicative,
