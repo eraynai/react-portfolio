@@ -1,5 +1,6 @@
 {
   "name": "elli-portfolio",
+  "homepage":"https://eraynai.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +22,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -46,6 +49,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^4.0.0",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
   }
