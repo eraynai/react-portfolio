@@ -109,7 +109,7 @@ export const Hero = () => {
             Developing e-commerce mastery: Tailored Shopify solutions for your
             success.
           </Desc>
-          <Button>Learn More</Button>
+          {/* <Button>Learn More</Button> */}
         </Left>
         <Right>
           <Canvas>

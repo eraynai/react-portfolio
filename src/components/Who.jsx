@@ -67,7 +67,7 @@ const Right = styled.div`
 
 export const Who = () => {
   return (
-    <Section>
+    <Section id="aboutSection">
       <Container>
         <Left>
           <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
@@ -87,7 +87,7 @@ export const Who = () => {
             Designing and Developing E-commerce Solutions with Precision and
             Passion.
           </Desc>
-          <Button>See My Work</Button>
+          {/* <Button>See My Work</Button> */}
         </Right>
       </Container>
     </Section>

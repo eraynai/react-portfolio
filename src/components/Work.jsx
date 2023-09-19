@@ -27,7 +27,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 1010px) {
@@ -43,6 +44,7 @@ const Left = styled.div`
   @media only screen and (max-width: 1010px) {
     padding: 20px;
     justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -93,7 +95,7 @@ const ListItem = styled.li`
 export const Work = () => {
   const [work, setWork] = useState("Theme Development");
   return (
-    <Section>
+    <Section id="workSection">
       <Container>
         <Left>
           <List>
