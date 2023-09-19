@@ -18,6 +18,7 @@ export default function Model(props) {
       <mesh
         geometry={nodes.Object_4.geometry}
         material={materials.MacBookPro}
+        scale={[0.7, 0.7, 0.7]}
       />
     </group>
   );

@@ -27,8 +27,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 100%;
-  max-width: 1400px;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 1010px) {
@@ -38,18 +37,17 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   @media only screen and (max-width: 1010px) {
     padding: 20px;
     justify-content: center;
-    width: 100%;
   }
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 2;
 `;
 
 const List = styled.ul`
@@ -57,39 +55,40 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-left: 3rem;
 `;
 
 const ListItem = styled.li`
-  font-size: 55px;
+  font-size: 35px;
   font-weight: bold;
   cursor: pointer;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+  color: #fff;
+  -webkit-text-stroke: 0px white;
   position: relative;
 
   @media only screen and (max-width: 1010px) {
-    font-size: 34px;
+    font-size: 26px;
     color: #fff;
     -webkit-text-stroke: 0px;
   }
 
-  &::after {
-    content: "${(props) => props.text}";
-    color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #da4ea2;
-    width: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
+  // &::after {
+  //   content: "${(props) => props.text}";
+  //   color: transparent;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   color: #da4ea2;
+  //   width: 0px;
+  //   overflow: hidden;
+  //   white-space: nowrap;
+  // }
 
-  &:hover {
-    &::after {
-      animation: ${moveText} 0.5s linear both;
-    }
-  }
+  // &:hover {
+  //   &::after {
+  //     animation: ${moveText} 0.5s linear both;
+  //   }
+  // }
 `;
 
 export const Work = () => {
