@@ -5362,6 +5362,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   @media only screen and (max-width: 1010px) {
     justify-content: center;
+    padding: 0 3rem;
   }
 `,x2e=Ft.h1``,E2e=Ft.form`
   width: 500px;
