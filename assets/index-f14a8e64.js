@@ -5135,6 +5135,7 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   font-size: 45px;
   @media only screen and (max-width: 1010px) {
     text-align: center;
+    font-size: 36px;
   }
 `,l0e=Ft.div`
   display: flex;
@@ -5185,6 +5186,10 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   }
 `,A0e=Ft.h1`
   font-size: 45px;
+  @media only screen and (max-width: 1010px) {
+    text-align: center;
+    font-size: 36px;
+  }
 `,v0e=Ft.div`
   display: flex;
   align-items: center;
@@ -5225,7 +5230,7 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   top: 100px;
   right: 100px;
   @media only screen and (max-width: 1010px) {
-    top: 0;
+    top: 20px;
     bottom: 0;
     left: 0;
     right: 0;
