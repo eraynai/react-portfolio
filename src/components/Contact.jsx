@@ -35,7 +35,7 @@ const Form = styled.form`
   flex-direction: column;
   gap: 25px;
   @media only screen and (max-width: 1010px) {
-    width: 400px;
+    width: 300px;
   }
 `;
 

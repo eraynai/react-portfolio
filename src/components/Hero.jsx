@@ -56,6 +56,7 @@ const Title = styled.h1`
   font-size: 45px;
   @media only screen and (max-width: 1010px) {
     text-align: center;
+    font-size: 36px;
   }
 `;
 const WhatWeDo = styled.div`
