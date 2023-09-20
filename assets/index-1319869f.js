@@ -5374,7 +5374,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-direction: column;
   gap: 25px;
   @media only screen and (max-width: 1010px) {
-    width: 250px;
+    width: 300px;
   }
 `,zb=Ft.input`
   padding: 20px;
