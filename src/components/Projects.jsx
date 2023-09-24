@@ -2,6 +2,8 @@ import ProjectCard from "./ProjectCard";
 import twitterShot from "../assets/twitter-shot.jpg";
 import legalShot from "../assets/legal-shot.jpg";
 import cuttingEdgeShot from "../assets/cuttingEdge-shot.jpg";
+import ProjectTag from "./ProjectTag";
+import { useState } from "react";
 
 const projectsData = [
   {
@@ -11,7 +13,7 @@ const projectsData = [
       "Created a landing page for Canadian Centre for Child Protection while working at the agency No Fixed Address. The design was provided for me and I had to implement it using Vue.js and delivered in 3 weeks.",
     image: twitterShot,
     previewUrl: "https://birthdayplea.com/en/",
-    gitUrl: "https://github.com/eraynai",
+    gitUrl: "https://github.com/eraynai/c3p-twitter-birthday",
     tag: ["All", "Web"],
   },
   {
@@ -37,24 +39,40 @@ const projectsData = [
 ];
 
 const Projects = () => {
+  const [tag, setTag] = useState("All");
+
+  const handleTagChange = (newTag) => {
+    setTag(newTag);
+  };
+
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
+  );
+
   return (
     <>
       <h2 className="text-center text-4xl font-bold text-white mt-4">
         Projects
       </h2>
       <div className="text-white flex flex-row justify-center gap-2 py-6">
-        <button className="rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer">
-          All
-        </button>
-        <button className="rounded-full border-2 hover:border-white  border-slate-600 px-6 py-3 text-xl cursor-pointer">
-          Web
-        </button>
-        <button className="rounded-full border-2 hover:border-white border-slate-600 px-6 py-3 text-xl cursor-pointer">
-          Shopify
-        </button>
+        <ProjectTag
+          onClick={handleTagChange}
+          name="All"
+          isSelected={tag === "All"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Shopify"
+          isSelected={tag === "Shopify"}
+        />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project) => (
+        {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
