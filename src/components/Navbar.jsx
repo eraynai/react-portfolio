@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import NavLink from "./Navlink";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,29 +8,36 @@ import MenuOverlay from "./MenuOverlay";
 const navLinks = [
   {
     title: "About",
-    path: "#about",
+    id: "about",
   },
   {
     title: "Projects",
-    path: "#projects",
+    id: "projects",
   },
   {
     title: "Contact",
-    path: "#contact",
+    id: "contact",
   },
 ];
+
+const scrollToSection = (sectionId) => {
+  const section = document.querySelector("#" + sectionId); // Add '#' before the sectionId
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Navbar = () => {
   const [navbarOpen, setNavBarOpen] = useState(false);
   return (
     <nav className="fixed mx-auto border border-[#33353f] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
+        <a
           className="text-lg md:text-5xl border border-purple-900 p-4 text-white font-semibold"
-          to={"/"}
+          href="/"
         >
           ELLI RAYNAI
-        </Link>
+        </a>
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
             <button
@@ -54,13 +60,19 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink
+                  href={"#" + link.id}
+                  title={link.title}
+                  onClick={() => scrollToSection(link.id)}
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <MenuOverlay links={navLinks} onClick={scrollToSection} />
+      ) : null}
     </nav>
   );
 };

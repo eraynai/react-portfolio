@@ -50,7 +50,7 @@ const Projects = () => {
   );
 
   return (
-    <>
+    <div id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4">
         Projects
       </h2>
@@ -83,7 +83,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 export default Projects;
