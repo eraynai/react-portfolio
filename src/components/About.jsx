@@ -51,6 +51,17 @@ const TAB_DATA = [
     content: (
       <ul>
         <li className="pb-4">
+          Shopify Development - Learn Liquid Programming - April 2023
+        </li>
+        <li className="pb-4">Meta Programming with Javascript - August 2022</li>
+        <li className="pb-4">
+          Meta Intro to Front End Development - August 2022
+        </li>
+        <li className="pb-4">
+          Nucamp Backend, SQL, Python and DevOps Bootcamp - May 2021 - August
+          2021
+        </li>
+        <li className="pb-4">
           General Assembley Software Engineering Immersive Certificate - May
           2021 - August 2021
         </li>
@@ -58,6 +69,7 @@ const TAB_DATA = [
           George Brown College - Interaction Design and Developement Diploma -
           September 2018 - April 2021
         </li>
+        <li className="pb-4">Learn Vue.js - February 2021</li>
       </ul>
     ),
   },
@@ -90,7 +102,7 @@ const About = () => {
               selectTab={() => handleTabChange("shopify")}
               active={tab === "shopify"}
             >
-              Shopify Services
+              Shopify
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("experience")}

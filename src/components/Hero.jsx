@@ -1,6 +1,12 @@
 import Image from "../assets/er_headshot_rounded.png";
 import { TypeAnimation } from "react-type-animation";
 
+const scrollToSection = (sectionId) => {
+  const section = document.querySelector("#" + sectionId); // Add '#' before the sectionId
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const Hero = () => {
   return (
     <section className="lg:py-16 ">
@@ -29,14 +35,23 @@ const Hero = () => {
             Coding with Passion, Developing with Purpose.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+            >
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white met">
-                Schedule A Call
-              </span>
-            </button>
+            <a
+              href="https://cal.com/eraynai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white met">
+                  Schedule A Call
+                </span>
+              </button>
+            </a>
           </div>
         </div>
 

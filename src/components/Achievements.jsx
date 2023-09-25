@@ -27,7 +27,7 @@ const Achievements = () => {
               key={index}
               className="flex flex-col items-center mx-2 sm:mx-4 my-2 sm:my-0"
             >
-              <h2 className="text-white text-s sm:text-2xl md:text-4xl font-bold">
+              <h2 className="text-center text-white text-s sm:text-2xl md:text-4xl font-bold">
                 {achievement.value}
               </h2>
               <p className="text-[#adb7be] text-sm sm:text-base">

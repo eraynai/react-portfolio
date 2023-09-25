@@ -6,7 +6,6 @@ const NavLink = ({ href, title, onClick }) => {
       className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
       onClick={(e) => {
         e.preventDefault();
-        console.log("Type of onClick:", typeof onClick); // Debugging line
         onClick?.();
       }}
     >
